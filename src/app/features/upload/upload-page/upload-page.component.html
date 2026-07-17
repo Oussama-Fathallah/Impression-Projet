@@ -1,0 +1,56 @@
+<div class="upload-page">
+
+
+<div class="upload-card">
+
+
+<h2>
+Importer votre document PDF
+</h2>
+
+
+
+<input
+type="file"
+accept="application/pdf"
+(change)="onFileSelected($event)"
+>
+
+
+
+<div *ngIf="fileName">
+
+
+<p>
+Fichier :
+{{fileName}}
+</p>
+
+
+<p>
+Nombre de pages :
+{{pages}}
+</p>
+
+
+</div>
+
+
+
+<button
+mat-raised-button
+color="primary"
+(click)="continue()"
+[disabled]="!pages">
+
+
+Continuer
+
+
+</button>
+
+
+</div>
+
+
+</div>

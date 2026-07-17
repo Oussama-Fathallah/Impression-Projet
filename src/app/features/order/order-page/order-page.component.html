@@ -1,0 +1,122 @@
+<div class="order-container">
+
+
+  <div class="order-card">
+
+
+    <h2>
+      Finaliser votre commande
+    </h2>
+
+
+
+    <div class="info">
+
+
+      <p>
+        Nombre de pages :
+        <strong>{{pages}}</strong>
+      </p>
+
+
+    </div>
+
+
+
+
+    <mat-radio-group
+      [(ngModel)]="mode"
+      (ngModelChange)="calculate()"
+      class="options">
+
+
+
+      <mat-radio-button value="bw">
+
+        Noir et blanc
+
+      </mat-radio-button>
+
+
+
+
+      <mat-radio-button value="color">
+
+        Couleur
+
+      </mat-radio-button>
+
+
+
+    </mat-radio-group>
+
+
+
+
+
+    <div class="price-box">
+
+
+      Prix :
+
+      <span>
+        {{price}} DH
+      </span>
+
+
+    </div>
+
+
+
+
+
+    <button
+    mat-raised-button
+    color="primary"
+    class="order-btn"
+    (click)="order()">
+
+
+      Commander
+
+
+    </button>
+
+
+
+  </div>
+
+
+
+
+
+  <!-- Animation validation -->
+
+  <div 
+  class="success-overlay"
+  *ngIf="success">
+
+
+      <div class="success-circle">
+
+        ✓
+
+      </div>
+
+
+
+      <h2>
+        Commande validée !
+      </h2>
+
+
+      <p>
+        Redirection...
+      </p>
+
+
+  </div>
+
+
+
+</div>
