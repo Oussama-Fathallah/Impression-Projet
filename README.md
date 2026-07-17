@@ -2,7 +2,7 @@
 
 ## 📌 Description
 
-**Impression Pro** est un prototype de plateforme web d'impression en ligne développé dans le cadre d'un test technique Full Stack.
+**Impression Pro**
 
 Fonctionnalités principales :
 
@@ -18,11 +18,6 @@ Fonctionnalités principales :
 ---
 
 # 🎥 Démonstration
-
-Vidéo de démonstration :
-
-➡️ Ajouter votre lien vidéo ici
-
 
 ---
 
@@ -66,22 +61,10 @@ Fonctionnalités :
 - Choix impression
 - Calcul prix automatique
 - Validation commande
-- Notifications utilisateur
-
 
 Lancer le frontend :
 
 
-```bash
-git checkout Front
-
-npm install
-
-ng serve
-
-Application :
-
-http://localhost:4200
 ⚙️ Backend (Branch BackEnd)
 
 API REST développée avec :
@@ -95,16 +78,7 @@ Hibernate
 PostgreSQL
 Supabase
 
-Lancer le backend :
 
-git checkout BackEnd
-
-mvn spring-boot:run
-
-API :
-
-http://localhost:8080
-🗄️ Base de données
 
 La base de données utilisée est :
 
@@ -113,31 +87,8 @@ Supabase PostgreSQL
 Tables principales :
 
 User
-
-Gestion des utilisateurs :
-
-id
-email
-password
-Document
-
-Gestion des fichiers PDF :
-
-id
-fileName
-filePath
-pages
-user_id
 Order
-
-Gestion des commandes :
-
-id
-mode
-price
-document_id
-user_id
-📂 Stockage PDF
+Document
 
 Les fichiers PDF sont stockés avec :
 
