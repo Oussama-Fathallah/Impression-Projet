@@ -90,8 +90,11 @@ Supabase PostgreSQL
 Tables principales :
 
 User
+
 Order
+
 Document
+
 
 Les fichiers PDF sont stockés avec :
 
